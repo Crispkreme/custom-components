@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: #eef5fe;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.nav_image img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 270px;
+    background: #fff;
+    padding: 15px 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.logo_items {
+    gap: 5px;
+}
+.logo_name {
+    font-size: 22px;
+    color: #333;
+    font-weight: 500px;
+}
+#lock-icon,
+#close-icon {
+    padding: 10px;
+    color: #4070f4;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#close-icon {
+    display: none;
+    color: #333;
+}
+
+.menu_container {
+    margin-top: 40px;
+    overflow-y: auto;
+    height: calc(100% - 82px);
+}
+
+.menu_container::-webkit-scrollbar {
+    display: none;
+}
+
+.menu_title {
+    position: relative;
+    height: 50px;
+    width: 55px;
+}
+
+.menu_title .title {
+}
+
+.menu_title .line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 20px;
+    border-radius: 25px;
+    background: #aaa;
+    opacity: 0;
+}
+
+.item {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #707070;
+}
+
+.link span {
+    white-space: nowrap;
+}
+
+.link:hover {
+    color: #fff;
+    background-color: #4070f4;
+}
+
+.link i {
+    height: 50px;
+    min-width: 55px;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.sidebar_profile {
+    padding-top: 20px;
+    margin-top: 20px;
+    gap: 15px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar_profile .data_text .name {
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar_profile .data_text .email {
+    font-size: 15px;
+    color: #333;
+}
